@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="myCanvas" width="640" height="360">
+</canvas>
+<div class="body">
+<div class="main">
+<div class="svg">
+<script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.moveTo(500,200);
+  ctx.lineTo(200,300);
+  ctx.bezierCurveTo(110,330,50,275,160,170);
+  ctx.bezierCurveTo(135,200,140,255,190,255);
+  ctx.lineTo(500,200);
+  ctx.fillStyle="white";
+  ctx.fill();
+  ctx.strokeStyle="black";
+  ctx.stroke();
+</script>
+
+  <svg
+       width="480px" height="288px"
+       viewBox="-30 -10 200 200">
+    <path id="Selection"
+          fill="black" stroke="white" stroke-width="1"
+          d="
+
+             M 103.00,87.00
+             C 102.19,90.61 100.53,95.42 100.59,99.00
+               100.65,102.41 102.09,106.27 104.39,108.79
+               112.13,117.23 124.72,112.57 134.00,110.12
+               134.00,110.12 191.00,95.12 191.00,95.12
+               191.00,95.12 224.00,87.00 224.00,87.00
+               220.13,90.00 215.46,91.36 211.00,93.28
+               211.00,93.28 185.00,104.42 185.00,104.42
+               185.00,104.42 136.00,125.01 136.00,125.01
+               126.69,128.85 117.16,133.82 107.00,134.75
+               104.64,135.07 100.30,135.09 98.00,134.75
+               90.86,133.39 86.19,128.19 85.53,121.00
+               84.49,109.80 94.75,93.83 103.00,87.00 Z" />
+
+  </svg>
+</div>
+</div>
+</div>
+</body>
+</html>
