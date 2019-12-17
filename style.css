@@ -1,44 +1,60 @@
-  #myCanvas{
-    position: absolute;
-     top:0;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     margin:auto;
-    background:transparent;
-  }
-
-  .svg{
+*{
+  margin: 0;
+  padding: 0;
+}
+.body, body{
+  height: 100%;
+  width: 100%;
+}
+.cvs{
   position: absolute;
-  top:0px;
-  left:10px;
-  right:0px;
-  bottom:300px;
+}
+.svg{
+  position: absolute;
   margin:auto;
   width: 500px;
   height:500px;
-  }
-  svg{
-	  position: absolute;
-	  top:50px;
-	  left:-110px;
-  }
+}
+svg{
+  position: absolute;
+  top:50px;
+  left:-110px;
+}
+/*
 .main{
-
   z-index: -1;
   background-image: url('http://giphygifs.s3.amazonaws.com/media/Bn0JzrZxWfTKU/giphy.gif');
   background-size: cover;
-
-
   width: 1010px;
   height:565px;
 }
+*/
 .body{
-        height: 100vh;
-        width: 100vw;
-        position: sticky;
-        top:0;
-        left:0;
-        background-image: url(1.png);
-        background-size:100%;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+.main{
+  width: 1050px; /* MSIZE */
+  height: 800px;  /* MSIZE */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.monitor{
+  z-index: -1;
+  width: 1050px; /* MSIZE */
+  height: 800px; /* MSIZE */
+  position: absolute;
+  background-image: url("1.png");
+  background-size: 1050px 800px; /* te dve vrednosti motata biti iste kot kjer piše MSIZE, v istem zaporedju */
+  background-repeat: no-repeat;
+}
+.world_gif{
+  position: relative;
+  top: 111px;
+  left: 107px;
+  width: 840px;
+  height: 400px;
+  z-index: 0;
+  background-image: url('http://giphygifs.s3.amazonaws.com/media/Bn0JzrZxWfTKU/giphy.gif');
+  background-size: cover;
 }
