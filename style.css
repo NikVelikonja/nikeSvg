@@ -8,6 +8,9 @@
 }
 .cvs{
   position: absolute;
+  top:200px;
+  left:150px;
+  left: 200px;
 }
 .svg{
   position: absolute;
@@ -18,7 +21,7 @@
 svg{
   position: absolute;
   top:50px;
-  left:-110px;
+  left:150px;
 }
 /*
 .main{
